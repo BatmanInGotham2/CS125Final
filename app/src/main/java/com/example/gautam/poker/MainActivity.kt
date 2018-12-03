@@ -7,6 +7,7 @@ import android.R.attr.button
 import android.widget.Button
 import android.R.attr.button
 import android.content.Intent
+import android.util.Log
 import android.view.View
 
 
@@ -16,13 +17,13 @@ import android.view.View
 class MainActivity : AppCompatActivity() {
 
     private var cameraKitView: CameraKitView? = null
-    var cam = findViewById<Button>(R.id.push_button)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val cam = findViewById<Button>(R.id.push_button)
         cameraKitView = findViewById(R.id.camera)
-
+        Log.i("BUTTON LISTENER", "OUTSIDE Listener")
         /*cam.setOnClickListener(object : View.OnClickListener {
             @Override
             fun onClick(v: View) {
@@ -31,8 +32,9 @@ class MainActivity : AppCompatActivity() {
 
         })*/
 
-        cam.setOnClickListener {
-            val intent = Intent(this, ResultsActivity::class.java)
+        cam?.setOnClickListener {
+            Log.i("BUTTON LISTENER", "Inside Listener")
+            val intent = Intent(this@MainActivity, ResultsActivity::class.java)
             startActivity(intent)
         }
     }

@@ -7,14 +7,14 @@ import android.widget.Button
 
 class ResultsActivity : AppCompatActivity() {
 
-    var next = findViewById<Button>(R.id.button2)
+    var next: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_results)
-
-        next.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+        next = findViewById<Button>(R.id.button2)
+        next?.setOnClickListener {
+            val intent = Intent(this@ResultsActivity, MainActivity::class.java)
             startActivity(intent)
         }
     }
