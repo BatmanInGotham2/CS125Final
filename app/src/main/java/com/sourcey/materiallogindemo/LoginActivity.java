@@ -19,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
 
-    @BindView(R.id.input_email) EditText _emailText;
+    @BindView(R.id.hand_cards) EditText _emailText;
     @BindView(R.id.btn_login) Button _loginButton;
 
     @Override
@@ -56,6 +56,7 @@ public class LoginActivity extends AppCompatActivity {
         progressDialog.show();
 
         String email = _emailText.getText().toString();
+
 
         // TODO: Implement your own authentication logic here.
 

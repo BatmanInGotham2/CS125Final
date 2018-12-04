@@ -26,7 +26,7 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_email"
+                android:id="@+id/hand_cards"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Add Hand"
@@ -43,8 +43,21 @@
             android:id="@+id/input_board"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Add Board"
+            android:hint="Add Community Cards"
             android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+            <EditText
+                android:id="@+id/input_players"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number of Players"
+                android:inputType="textEmailAddress" />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.v7.widget.AppCompatButton
