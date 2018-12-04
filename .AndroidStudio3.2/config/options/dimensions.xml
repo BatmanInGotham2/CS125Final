@@ -1,0 +1,35 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.0.0.3000.2000@192dpi" x="1502" y="792" />
+    <location key="FileChooserDialogImpl.0.0.3000.2000@192dpi" x="1066" y="268" />
+    <location key="#Plugins.0.0.3000.2000@192dpi" x="690" y="102" />
+    <location key="deploy.picker.dialog.0.0.3000.2000@192dpi" x="862" y="422" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.3000.2000@192dpi" x="898" y="558" />
+    <location key="GitCloneDialog.0.0.3000.2000@192dpi" x="1128" y="752" />
+    <location key="chooseDestDirectoryDialog.0.0.3000.2000@192dpi" x="1128" y="508" />
+    <location key="CommitChangelistDialog2.0.0.3000.2000@192dpi" x="626" y="146" />
+    <location key="SettingsEditor.0.0.3000.2000@192dpi" x="456" y="242" />
+    <location key="Vcs.Push.Dialog.0.0.3000.2000@192dpi" x="856" y="410" />
+    <location key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2.0.0.3000.2000@192dpi" x="640" y="426" />
+    <location key="IdeErrosDialog.0.0.3000.2000@192dpi" x="754" y="638" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.0.0.3000.2000@192dpi" x="412" y="262" />
+    <location key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog.0.0.3000.2000@192dpi" x="1164" y="800" />
+    <location key="#Project_Structure.0.0.3000.2000@192dpi" x="666" y="254" />
+    <location key="NewModule_or_Project.wizard.0.0.3000.2000@192dpi" x="840" y="190" />
+    <location key="git4idea.rebase.GitRebaseDialog.0.0.3000.2000@192dpi" x="1068" y="672" />
+    <location key="git4idea.merge.GitPullDialog.0.0.3000.2000@192dpi" x="866" y="526" />
+    <location key="AndroidThemeDialog.0.0.3000.2000@192dpi" x="662" y="362" />
+    <location key="ProcessPopupWindow.0.0.3000.2000@192dpi" x="2194" y="1652" />
+    <location key="DiffContextDialog.0.0.3000.2000@192dpi" x="246" y="188" />
+    <size key="GridCell.Tab.0.left.0.0.3000.2000@192dpi" width="0" height="0" />
+    <size key="GridCell.Tab.0.center.0.0.3000.2000@192dpi" width="0" height="0" />
+    <size key="GridCell.Tab.0.right.0.0.3000.2000@192dpi" width="0" height="0" />
+    <size key="GridCell.Tab.0.bottom.0.0.3000.2000@192dpi" width="0" height="0" />
+    <size key="GridCell.Tab.1.left.0.0.3000.2000@192dpi" width="2910" height="618" />
+    <size key="GridCell.Tab.1.center.0.0.3000.2000@192dpi" width="2910" height="618" />
+    <size key="GridCell.Tab.1.right.0.0.3000.2000@192dpi" width="2910" height="618" />
+    <size key="GridCell.Tab.1.bottom.0.0.3000.2000@192dpi" width="2910" height="618" />
+    <size key="GitCloneDialog.0.0.3000.2000@192dpi" width="742" height="432" />
+    <size key="ProcessPopupWindow.0.0.3000.2000@192dpi" width="800" height="232" />
+  </component>
+</application>
