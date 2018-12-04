@@ -11,7 +11,7 @@
       <entry action="Android.RunAndroidAvdManager" count="7" />
       <entry action="Android.SyncProject" count="1" />
       <entry action="CheckStyleCurrentFileAction" count="11" />
-      <entry action="CheckinProject" count="11" />
+      <entry action="CheckinProject" count="12" />
       <entry action="ChooseRunConfiguration" count="6" />
       <entry action="CleanGradleProject" count="14" />
       <entry action="CloseProject" count="30" />
@@ -54,7 +54,7 @@
       <entry action="ShowSettings" count="8" />
       <entry action="Stop" count="5" />
       <entry action="ToggleLineBreakpoint" count="7" />
-      <entry action="Vcs.Push" count="5" />
+      <entry action="Vcs.Push" count="8" />
       <entry action="Vcs.ShowTabbedFileHistory" count="1" />
       <entry action="ViewBreakpoints" count="1" />
     </counts>
@@ -142,9 +142,9 @@
       <entry path="File -&gt; Sync Project with Gradle Files" count="1" />
       <entry path="Run -&gt; Run..." count="6" />
       <entry path="Tools -&gt; AVD Manager" count="7" />
-      <entry path="VCS -&gt; Commit" count="11" />
+      <entry path="VCS -&gt; Commit" count="12" />
       <entry path="VCS -&gt; Git -&gt; Pull..." count="1" />
-      <entry path="VCS -&gt; Git -&gt; Push..." count="5" />
+      <entry path="VCS -&gt; Git -&gt; Push..." count="8" />
       <entry path="VCS -&gt; Git -&gt; Rebase..." count="1" />
     </counts>
   </component>
