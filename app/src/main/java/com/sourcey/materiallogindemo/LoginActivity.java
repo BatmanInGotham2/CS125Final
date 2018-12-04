@@ -18,7 +18,7 @@ import butterknife.ButterKnife;
 public class LoginActivity extends AppCompatActivity {
     private static final String TAG = "LoginActivity";
     private static final int REQUEST_SIGNUP = 0;
-
+    //zoop
     @BindView(R.id.input_email) EditText _emailText;
     @BindView(R.id.btn_login) Button _loginButton;
 
