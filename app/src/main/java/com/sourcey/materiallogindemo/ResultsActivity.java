@@ -8,18 +8,21 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
-import com.mashape.unirest.http.HttpResponse;
-import com.mashape.unirest.http.JsonNode;
-import com.mashape.unirest.http.Unirest;
-import com.mashape.unirest.http.exceptions.UnirestException;
+import com.android.volley.AuthFailureError;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class ResultsActivity extends AppCompatActivity {
 
     private Button nextTurn;
     Activity currentActivity;
-
-    public ResultsActivity() throws UnirestException {
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,15 +39,35 @@ public class ResultsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        HttpResponse<JsonNode> response = null;
-        try {
-            Log.i("Poker", "Before API Call");
-            response = Unirest.get("https://poker-odds.p.rapidapi.com/hold-em/odds?community=5d%2C7c%2CAh&hand=As%2CKd&players=3").header("X-RapidAPI-Key", "oSYwc74dq2mshgFSy4inZS2qLgGip1IF3yUjsnx8omDDoyQIxI").asJson();
-            Log.i("Poker", "After API Call");
-        } catch (UnirestException e) {
-            Log.i("Poker", "Inside Stack Trace API Call");
-            e.printStackTrace();
-        }
+
+        RequestQueue queue = Volley.newRequestQueue(this);
+        String url = "https://poker-odds.p.rapidapi.com/hold-em/odds?community=5d%2C7c%2CAh&hand=As%2CKd&players=3";
+        StringRequest getRequest = new StringRequest(Request.Method.GET, url,
+                new Response.Listener<String>()
+                {
+                    @Override
+                    public void onResponse(String response) {
+                        // response
+                        Log.d("Response", response);
+                    }
+                },
+                new Response.ErrorListener()
+                {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        // TODO Auto-generated method stub
+                        Log.d("ERROR","error");
+                    }
+                }
+        ) {
+            @Override
+            public Map<String, String> getHeaders() throws AuthFailureError {
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("X-RapidAPI-Key", "kRCZKdqb2cmsh7tMWKywgoF65D0Ep1gzKRmjsnobQude2GCQKu");
+                return params;
+            }
+        };
+        queue.add(getRequest);
 
         //Log.i("Poker", response.toString());
     }
